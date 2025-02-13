@@ -3,7 +3,7 @@ export default class {
 
   }
 
-  setTitle() {
+  setTitle(title) {
     document.title = title;
   }
 
