@@ -34,10 +34,45 @@
 
   <style>
 
+    .navigation {
+      position:relative;
+      width:100%;
+      height:2em;
+      background: #fff;
+      box-shadow: 0px 3px 5px rgba(0,0,0,0.1);
+    }
+    .navigation ul {
+      position:relative;
+      display:flex;
+      flex-direction: row;
+      height:100%;
+      width100%;
+    }
+    .navigation ul li {
+
+    }
+    .navigation ul li a {
+      position:relative;
+      display:flex;
+      justify-content: center;
+      align-items:center;
+      color:#000;
+      padding: 5px 10px;
+    }
+
   </style>
 
+  <nav class="navigation">
+    <ul>
+      <li><a href="/dashboard" class="nav_link" data-link>Dashboard</a></li>
+      <li><a href="/posts" class="nav_link" data-link>Posts</a></li>
+      <li><a href="/settings" class="nav_link" data-link>Settings</a></li>
+    </ul>
 
-<script src="js/script.js" rel="javascript" type="module"></script>
+  </nav>
+
+
+<script src="js/index.js" rel="javascript" type="module"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
 </body>
 
