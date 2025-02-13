@@ -15,7 +15,16 @@ const router = async () => {
     };
   });
 
-  console.log(potentialMatches);
+  let match = potentialMatches.find(potentialMatch => potentialMatch.isMatch);
+
+  if(!match) {
+    match = {
+      route:  routes[0],
+      isMatch: true
+    };
+  }
+
+  console.log(match.route.view());
 
 };
 
