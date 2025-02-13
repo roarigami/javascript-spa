@@ -1,9 +1,15 @@
 
+const navigateTo = url => {
+  history.pushState(null, null, url);
+  router();
+}
+
+
 const router = async () => {
   const routes = [
     { path: "/", view: () => console.log("Viewing Dashboard") },
     { path: "/posts", view: () => console.log("Viewing Posts") },
-    { path: "/settings", view: () => console.log("Viewing Settins") },
+    { path: "/settings", view: () => console.log("Viewing Settings") },
   ];
 
 
@@ -29,5 +35,12 @@ const router = async () => {
 };
 
 document.addEventListener("DOMContentLoaded", () => {
+  document.body.addEventListener("click", e => {
+    //console.log("click is working")
+    if(e.target.matches("[data-link]")) {
+        e.preventDefault();
+        navigateTo(e.target.href);
+    }
+  })
   router();
 });
