@@ -54,7 +54,7 @@ const router = async () => {
 
   document.querySelector("#app").innerHTML = await view.getHtml();
 
-  console.log(match.route.view());
+  //console.log(match.route.view());
 
 };
 
