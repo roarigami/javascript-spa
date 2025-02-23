@@ -58,8 +58,10 @@ const router = async () => {
 
 };
 
-//window.
-global.addEventListener("popstate", router);
+//window. <-- window object will not work if ES6 modules are enabled
+//This is because the window and document objects are browser objects(client env)
+//and node(as a server env) does not have access to them
+window.addEventListener("popstate", router);
 
 document.addEventListener("DOMContentLoaded", () => {
 
