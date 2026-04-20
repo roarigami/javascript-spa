@@ -12,8 +12,9 @@ export default class extends AbstractView {
     <h1>Welcome Back Rory</h1>
 
     <p>
-      Sed ut perspiciatis unde omnis iste natus
-      error sit voluptatem accusantium
+      Node JS content management system, deployed with Docker.
+      <br>
+      Master Docker and become a 10X sysadmin
     </p>
 
     <p>
